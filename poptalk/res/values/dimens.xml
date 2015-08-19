@@ -1,0 +1,181 @@
+<resources>
+
+    <!-- Start Splash screen Dimens -->
+    <dimen name="p_splash_login_sign_up">10dp</dimen>
+    <dimen name="ts_splash_login_sign_up">20sp</dimen>
+    <dimen name="width_splash_login_sign_up_vertical_line">1dp</dimen>
+    <dimen name="margin_splash_login_sign_up_vertical_line">10dp</dimen>
+    <dimen name="padding_splash_login_sign_up_pageindicator">15dp</dimen>
+    <dimen name="padding_splash_app_logo">10dp</dimen>
+    <dimen name="radius_page_indicator">5dp</dimen>
+    <dimen name="dimen_sign_up_profile_pic">128dp</dimen>
+    <dimen name="dimen_short_desc">13sp</dimen>
+    
+    <!-- End Splash screen Dimens -->
+   
+   
+
+    <!-- Start Login screen Dimens -->
+    <dimen name="padding_login_screen">10dp</dimen>
+    <dimen name="ts_welcome_txt">30sp</dimen>
+    <dimen name="ts_please_login_txt">20sp</dimen>
+    <dimen name="m_login_text_box">20dp</dimen>
+    <dimen name="padding_txt_welcome">30dp</dimen>
+    <dimen name="padding_txt_please_login">20dp</dimen>
+    <!-- End Login screen Dimens -->
+
+
+    <!-- Start Call screen Dimens -->
+    <dimen name="padding_call_button">10dp</dimen>
+    <dimen name="padding_top_menu_button">5dp</dimen>
+    <dimen name="ts_contacts_type_header">20sp</dimen>
+    <dimen name="ts_contacts_name">20sp</dimen>
+    <dimen name="height_selected_tab">5dp</dimen>
+    <dimen name="height_call_log_row">60dp</dimen>
+    <dimen name="dimen_contact_image">48dp</dimen>
+    <dimen name="dimen_message_log_image">54dp</dimen>
+    <dimen name="padding_call_log_row">5dp</dimen>
+    <dimen name="ts_contact_name">18sp</dimen>
+    <dimen name="ts_call_time">14sp</dimen>
+    <!-- End Call screen Dimens -->
+
+    <dimen name="m_lets_txt">30dp</dimen>
+    <dimen name="ts_btn_txt">15sp</dimen>
+    <dimen name="p_btn_left">10dp</dimen>
+    <dimen name="p_btn_right">10dp</dimen>
+    <dimen name="p_btn_top">15dp</dimen>
+    <dimen name="p_btn_bottom">15dp</dimen>
+    <dimen name="p_fb_button">5dp</dimen>
+    <dimen name="p_fb_image">10dp</dimen> <!-- 30dp -->
+
+    <dimen name="ts_menu">10sp</dimen>
+    <dimen name="m_keybord_button">15dp</dimen>
+    <dimen name="ts_keypad">25sp</dimen>
+    <dimen name="ts_call_top_menu">20sp</dimen>
+    <dimen name="ts_call_bottom_menu">20sp</dimen>
+
+    <!-- Sectioned grid view dimension -->
+
+    <dimen name="grid_item_size">95dp</dimen>
+    <dimen name="grid_image_size">72dp</dimen>
+    <!-- <dimen name="grid_item_size">88dp</dimen> -->
+    <dimen name="grid_item_icon_size">48dp</dimen>
+    <dimen name="grid_item_text_view_size">36dp</dimen>
+    <dimen name="grid_item_margin_size">2dp</dimen>
+    <dimen name="grid_item_full_size">90dp</dimen>
+    <dimen name="grid_item_bottom_line_size">2dp</dimen>
+    <dimen name="fav_padding_bottom">20dp</dimen>
+    <!-- Sectioned grid view dimension -->
+
+
+    <!-- Credit screen dimen -->
+    <dimen name="ts_credit_screen_header">20sp</dimen>
+    <dimen name="padding_credit_screen_header">20dp</dimen>
+    <dimen name="ts_credit_static_txt">15sp</dimen>
+    <dimen name="ts_credit_options">15sp</dimen>
+    <dimen name="padding_screen">10dp</dimen>
+    <dimen name="ts_credit_remaining">40sp</dimen>
+    <dimen name="padding_txt">10dp</dimen>
+    <dimen name="margin_line">40dp</dimen>
+    <dimen name="ts_number">60sp</dimen>
+    <dimen name="ts_bold_texts">20sp</dimen>
+    <dimen name="ts_share_buttons">15sp</dimen>
+    <!-- Credit screen dimen -->
+
+
+    <!-- Chat screen -->
+    <dimen name="padding_enter_chat_txt">10dp</dimen>
+    <!-- Chat screen -->
+    <!-- Account Setting -->
+    <dimen name="dimen_profile_pic">100dp</dimen>
+    <dimen name="ts_page_title">30sp</dimen>
+    <dimen name="padding_page_title">10dp</dimen>
+    <dimen name="ts_page_text">15sp</dimen>
+    <dimen name="padding_page_txt">8dp</dimen>
+    <dimen name="padding_page">10dp</dimen>
+    <dimen name="padding_change_password_top">50dp</dimen>
+
+    <!-- Account Setting -->
+
+    <dimen name="h_app_header">50dp</dimen>
+    <dimen name="h_app_tab_header">60dp</dimen>
+    <dimen name="padding_app_header">10dp</dimen>
+    <dimen name="ts_screen_header_title">20sp</dimen>
+    <dimen name="ts_poptalk_number_desc">18sp</dimen>
+    <dimen name="dimen_profile_pic_in_header">48dp</dimen>
+    <dimen name="crop__bar_height">56dp</dimen>
+    <dimen name="dropdown_item_padding">10dp</dimen>
+    <dimen name="dropdown_item_height">64dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="d_arc_radius">120dp</dimen>
+    <dimen name="d_space_from_bottom">120dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="circle_indicator_radius">5dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">8dp</dimen>
+   
+    <!-- Create new group dimen -->
+    <dimen name="d_group_icon">72dp</dimen>
+    <dimen name="d_screen_padding">15dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="number_hint_size">20sp</dimen>
+    <dimen name="selected_number_size">40sp</dimen>
+    
+    <dimen name="margin_top_max">80dp</dimen>
+    <dimen name="margin_purcahse_button">10dp</dimen>
+    <dimen name="margin_get_button">20dp</dimen>
+    <dimen name="margin_textview">30dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+    <dimen name="margin_top">10dp</dimen>
+    <dimen name="margin_bottom">10dp</dimen>
+    
+     <!-- Create Group Details Screen  dimen -->
+    <dimen name="media_icon_img">64dp</dimen>
+    <dimen name="grp_edit_img">32dp</dimen>
+    <dimen name="grp_icon_img">64dp</dimen>
+    <dimen name="member_icon_img">48dp</dimen>
+    <dimen name="d_group_info_rlv_height">120dp</dimen>
+    <dimen name="d_group_info_rlv_margin_bottom">5dp</dimen>
+    <dimen name="d_group_image_margin_right">10dp</dimen>
+    <dimen name="d_group_image_margin_top">20dp</dimen>
+    <dimen name="ts_group_name">30sp</dimen>
+    <dimen name="ts_group_creation_time">15sp</dimen>
+    <dimen name="d_group_creation_time_padding">3dp</dimen>
+    <dimen name="d_view_width">1dp</dimen>
+    <dimen name="d_view_height">35dp</dimen>
+    <dimen name="d_view_margin_top">35dp</dimen>
+    <dimen name="d_group_icon_margin">10dp</dimen>
+    <dimen name="d_rl_group_media_margin">10dp</dimen>
+    <dimen name="ts_group_media">20sp</dimen>
+    <dimen name="d_group_media_view_height">1dp</dimen>
+    <dimen name="d_group_media_view_margin_left">10dp</dimen>
+    <dimen name="d_group_media_view_margin_right">10dp</dimen>
+    <dimen name="d_horizontal_scroll_view_margin_top">25dp</dimen>
+    <dimen name="d_rl_group_member_margin_top">10dp</dimen>
+    <dimen name="d_rl_group_member_margin_left">10dp</dimen>
+    <dimen name="d_rl_group_member_margin_right">10dp</dimen>
+    <dimen name="ts_participants">20sp</dimen>
+    <dimen name="d_paricipants_margin_left">10dp</dimen>
+    <dimen name="d_participants_count_margin_right">10dp</dimen>
+    <dimen name="d_ll_member_list_margin_left">10dp</dimen>
+    <dimen name="d_ll_member_list_margin_right">10dp</dimen>
+    <dimen name="d_rl_exit_group_margin_left">10dp</dimen>
+    <dimen name="d_rl_exit_group_margin_right">10dp</dimen>
+    <dimen name="d_rl_exit_group_margin_top">10dp</dimen>
+    <dimen name="d_view_member_list_margin_left">10dp</dimen>
+    <dimen name="d_view_member_list_margin_right">10dp</dimen>
+    <dimen name="d_view_member_list_margin_top">10dp</dimen>
+    <dimen name="d_rl_group_member_list_padding_top">10dp</dimen>
+   <dimen name="d_rl_group_member_list_padding_bottom">10dp</dimen>
+    
+    <dimen name="ts_group_member_name">25sp</dimen>
+    <dimen name="ts_group_member_status">13sp</dimen>
+    <dimen name="d_group_member_image_margin">10dp</dimen>
+    <dimen name="d_group_admin_margin_top">8dp</dimen>
+    <dimen name="ts_group_admin">13sp</dimen>
+    <dimen name="d_group_member_view_height">1dp</dimen>
+    <dimen name="d_ll_media_padding">10dp</dimen>
+</resources>

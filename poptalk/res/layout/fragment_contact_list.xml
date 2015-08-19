@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="@dimen/padding_login_screen"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_fav_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_favorites"
+            android:textColor="@color/color_txt"
+            android:textSize="@dimen/ts_btn_txt"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hv_favorite_contacts"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/ll_favorite_contacts_in_fragment"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_all_contact"
+        android:textColor="@color/color_txt"
+        android:textSize="@dimen/ts_btn_txt" />
+
+    <GridView
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="100dp"
+        android:stretchMode="columnWidth"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/gv_contacts" />
+
+</LinearLayout>

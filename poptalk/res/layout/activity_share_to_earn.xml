@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="goToPreviousScreen"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_back_from_change_password"
+            android:layout_toRightOf="@+id/iv_back_from_change_password"
+            android:text="@string/txt_share_to_earn"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_total_credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_page"
+            android:paddingRight="@dimen/padding_page"
+            android:paddingTop="@dimen/padding_page"
+            android:text="125"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+
+        <ImageView
+            android:id="@+id/iv_credit_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_total_credits"
+            android:layout_toStartOf="@+id/tv_total_credits"
+            android:onClick="animateCoin"
+            android:src="@drawable/credit_icon" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingLeft="@dimen/padding_page"
+        android:paddingRight="@dimen/padding_page" 
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:paddingBottom="@dimen/padding_page"
+                android:paddingTop="@dimen/padding_page"
+                android:text="Use your phone number or your PopTalk number as your referral code."
+                android:textSize="@dimen/ts_screen_header_title" 
+                android:textColor="@color/color_txt_gray"/>
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/tv_my_number_to_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:lines="2"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:paddingBottom="@dimen/padding_page"
+                android:paddingTop="@dimen/padding_page"
+                android:text="Your Ciao Number: "
+                android:textSize="@dimen/ts_screen_header_title"
+                android:textColor="@color/color_txt_gray"/>
+
+            <!--
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_page"
+                android:layout_marginTop="@dimen/padding_page"
+                android:background="@drawable/selector_facebook_button"
+                android:onClick="shareViaFacebook"
+                android:text="Share this with facebook"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_page"
+                android:layout_marginTop="@dimen/padding_page"
+                android:background="@drawable/selector_twitter_button"
+                android:onClick="shareViaTwitter"
+                android:text="Share this with twitter"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_page"
+                android:layout_marginTop="@dimen/padding_page"
+                android:background="@drawable/selector_button"
+                android:onClick="shareViaEmail"
+                android:text="Share this with email"
+                android:textColor="@android:color/white" />
+            -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:onClick="shareViaFacebook" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_facebook_button" >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/fbb" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#66000000" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#4DFFFFFF" />
+                    </LinearLayout>
+
+                    <com.ciao.app.views.customviews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/linearLayout1"
+                        android:paddingLeft="@dimen/padding_page"
+                        android:text="Share this on Facebook"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/ts_share_buttons" />
+                </RelativeLayout>
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fb_bg"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:text="Earn\n+10"
+                    android:textColor="@color/font_blue_color" />
+            </FrameLayout>
+
+            <!-- Layout twiiter button -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/padding_page"
+                android:onClick="shareViaTwitter">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_twitter_button" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/twit" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" >
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#33000000" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#4DFFFFFF" />
+                    </LinearLayout>
+
+                    <com.ciao.app.views.customviews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/linearLayout2"
+                        android:paddingLeft="@dimen/padding_page"
+                        android:text="Share this on Twitter"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/ts_share_buttons" />
+                </RelativeLayout>
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/twit_bg"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:text="Earn\n+10"
+                    android:textColor="#5ea9dd" />
+            </FrameLayout>
+            <!-- Layout twiiter button -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

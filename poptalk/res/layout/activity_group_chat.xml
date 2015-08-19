@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/chat_bg"
+        android:scaleType="matrix"
+        android:visibility="gone" /> -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_app_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_app_header"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_app_header"
+            android:orientation="vertical">
+
+            <include layout="@layout/include_group_chat_header"></include>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/ll_app_header"
+            android:layout_centerHorizontal="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ListView
+                        android:id="@+id/lv_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:divider="@null"
+                        android:layout_above="@+id/ll_enter_chat" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:weightSum="1"
+                        android:background="@color/color_app_header"
+                        android:id="@+id/ll_enter_chat"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_chat_option"
+                            android:layout_width="0dp"
+                            android:layout_weight=".1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/up"
+                            android:clickable="true" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".9"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_chat_txt"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="2dp"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@color/color_txt_gray"
+                                android:background="@drawable/selector_chat_input_box"
+                                android:layout_toLeftOf="@+id/tv_send"/>
+
+                            <!-- <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/iv_send_chat"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/send"
+                                android:layout_toLeftOf="@+id/iv_voice_chat"
+                                android:layout_centerVertical="true"
+                                android:paddingLeft="10dp"
+                                android:layout_alignParentRight="true"
+                                android:visibility="gone"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/iv_voice_chat"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/send"
+                                android:layout_alignParentRight="true"/> -->
+                            
+                            <com.ciao.app.views.customviews.CustomTextView
+                                android:id="@+id/tv_send"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:onClick="sendSMS"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="Send"
+                                android:textColor="@android:color/white"
+                                app:fontName="bold" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_chat_options_pop_up"
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_above="@+id/ll_enter_chat"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="bottom"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_launcher"
+                                android:id="@+id/iv_mail" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_launcher"
+                                android:id="@+id/iv_camera" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/user"
+                                android:id="@+id/iv_user" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_launcher"
+                                android:id="@+id/iv_callender" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/attach"
+                                android:id="@+id/iv_attach" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/ll_add_chat_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_app_header"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_app_header"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_app_header">
+
+            <ImageView
+                android:id="@+id/iv_add_new_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/plus"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_app_header"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_back_from_add_new_chat_user"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/back"
+                android:padding="@dimen/padding_app_header" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/et_search_contact"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/iv_add_new_chat"
+                android:layout_toStartOf="@+id/iv_add_new_chat"
+                android:layout_toRightOf="@+id/iv_back_from_add_new_chat_user"
+                android:layout_toEndOf="@+id/iv_back_from_add_new_chat_user"
+                 />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

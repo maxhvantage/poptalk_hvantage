@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">PopTalk</string>
+    <string name="txt_please_wait">Please wait</string>
+    <string name="action_settings">Settings</string>
+    <!-- Splash screen txt -->
+    <string name="txt_signup">Sign Up</string>
+    <string name="txt_login">Log In</string>
+    <!-- Splash screen txt -->
+
+
+    <!-- Login screen txt -->
+    <string name="txt_welcome">Welcome back!</string>
+    <string name="txt_please_login">Please log in.</string>
+    <string name="hint_user_name">Phone number or email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_dob">Date of birth</string>
+    <string name="txt_forgot_password">Forgot username or password?</string>
+    <string name="txt_forgot_password_header">Forgot password</string>
+    <string name="txt_login_button">LOGIN</string>
+
+    <!-- Login screen txt -->
+
+
+    <!-- Registration screen txt -->
+    <string name="txt_lets_start">Let\'s Get Started</string>
+    <string name="txt_or">OR</string>
+    <string name="hint_first_name">Full name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_referral_code">Referral code</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_state">State</string>
+    <string name="hint_phone">phone</string>
+    <string name="txt_autofill_with_facebook">Sign up with Facebook</string>
+    <string name="txt_create_new_account">Send Confirmation Code</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_resend">&lt;a href=&quot;&quot;&gt;Resend the pin via SMS&lt;/a&gt;</string>
+    <string name="txt_minimum_password_length">Minimum 6 characters</string>
+    <string name="txt_optional">Optional</string>
+    <!-- Registration screen txt -->
+
+
+    <!-- Call screen strings -->
+    <string name="txt_keypad">KEYPAD</string>
+    <string name="txt_call_log">CALL LOG</string>
+    <string name="txt_contacts">CONTACTS</string>
+    <!-- Call screen strings -->
+    <string-array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="counrty_array">
+        <item>USA</item>
+        <item>INDIA</item>
+    </string-array>
+    <string-array name="state_array">
+        <item> Alabama</item>
+        <item> Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item> Connecticut</item>
+        <item> Delaware</item>
+        <item> Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item> Idaho</item>
+        <item>Illinois</item>
+    </string-array>
+    <!-- Call Screen Strings -->
+    <string name="txt_call">CALLS</string>
+    <string name="txt_message">MESSAGES</string>
+    <string name="txt_credit">CREDITS</string>
+    <string name="txt_settings">SETTINGS</string>
+    <string name="txt_favorites">Favorites</string>
+    <string name="txt_all_contact">All </string>
+    <!-- Call Screen Strings -->
+
+
+    <!-- Credit Screen Strings -->
+    <string name="txt_remaining_minutes">Remaining Minutes/Texts</string>
+    <string name="txt_ciao_to_phone">PopTalk to phone</string>
+    <string name="txt_see_voice_and_sms_rates">See voice and SMS rates</string>
+
+    <string-array name="array_credit_options">
+        <item>PopTalk </item>
+        <item>Phone </item>
+    </string-array>
+    <!-- Credit Screen Strings -->
+
+
+    <!-- Account Setting screen -->
+    <string name="txt_account_setting">Account Settings</string>
+    <string name="txt_my_ciao_number">My PopTalk Number</string>
+    <string name="txt_international_prefix">International prefix</string>
+    <string name="txt_notification">Notifications</string>
+    <string name="txt_change_password">Change Password</string>
+    <string name="txt_get_ciao_number">Get another PopTalk number</string>
+    <string name="txt_check_rates">Check Rates</string>
+    <string name="txt_ad_lockscreen">Sponsored Lockscreen</string>
+    <string name="txt_help">Help</string>
+    <string name="txt_logout">Log out</string>
+    <string name="txt_change_ciao_number">PopTalk Number</string>
+    <string name="txt_share_to_earn">Share To Earn </string>
+    <string name="txt_invite">Invite a friend for credits</string>
+    <string name="txt_contacts_header">Contacts</string>
+    <string name="txt_purchase_item">Buy Premium</string>
+    <string name="txt_credit_item">Buy Credits</string>
+    <string name="txt_invite_description">When your friend joins using your referral code, they earn 50 credits and you earn 50 credits for every month your friend uses PopTalk.\n\nYour referral code is your phone number or your PopTalk number.</string>
+    <string name="hint_old_password">Old password</string>
+    <string name="txt_as_long_as">as long as your friend has PopTalk on their phone</string>
+    <string name="hint_new_password">New password</string>
+    <string name="hint_new_ciao_number">New PopTalk Number</string>
+    <string name="hint_confirm_new_password">Confirm password</string>
+    <string name="txt_submit">Submit</string>
+    <string name="txt_verifiy_number">Verify your number</string>
+    <!-- <string name="txt_confirmation_label">We have sent an SMS with conformation code.Please insert the code below</string> -->
+    <string name="txt_confirmation_label">Type below the PIN which was sent for you via SMS. The SMS can take up to 3 minutes to arrive.</string>
+    <string name="invalid_pin">Invalid PIN, check your SMS and try again</string>
+
+    <!-- Account Setting screen -->
+
+
+    <!-- Contact screen -->
+    <string name="txt_invite_to_ciao">Invite to PopTalk</string>
+    <string name="txt_add_fav">Add to favorites</string>
+    <!-- Contact screen -->
+
+    <string name="facebook_app_id">600904370022819</string>
+    <string name="user_security_key">abchjds1256a12dasdsad67672</string>
+    <string name="user_device_token">12345</string>
+    <string name="password_validation">Your password must contain one digit, one lower case char, one upper case char, some special chars, length should be within 6 to 15 chars</string>
+
+    <!-- Image cropper -->
+    <string name="crop__saving">Saving picture…</string>
+    <string name="crop__wait">Please wait…</string>
+    <string name="crop__pick_error">No image sources available</string>
+    <string name="crop__done">DONE</string>
+    <string name="crop__cancel" tools:ignore="ButtonCase">CANCEL</string>
+    <!-- Image cropper -->
+
+
+    <!-- Buy Ciao Number -->
+    <string name="txt_buy_ciao_number">Claim your number</string>
+    <string name="txt_congrats_you_are_in">Secure your free number &amp; send SMS</string>
+    <string name="txt_state_for_free_number">Did you know PopTalk gives you a free number for texting and calling?  This is the number that people you communicate with will see.</string>
+    <string name="txt_secure_your_ciao_number">SECURE YOUR PopTalk NUMBER</string>
+    <string name="txt_select_setings">Select your free US number now to send a text.  If you want a number from a different country, visit the Settings page.</string>
+    <string name="txt_tnc_agreed">I agree to the Terms and Conditions.</string>
+
+    <string-array name="number_for_country">
+        <item>USA</item>
+    </string-array>
+    <!-- Buy Ciao Number -->
+
+
+    <!-- Group chat -->
+    <string name="txt_create_new_group">New Group</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_create">Create</string>
+    <string name="txt_add_group_praticipants">ADD GROUP PARTICIPANTS</string>
+    <!-- Group chat -->
+
+    <string name="take_photo">Take Photo</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="camera">Camera</string>
+    <string name="get_started">Get Started</string>
+    <string name="gallery">Gallery</string>
+    <string name="choose_video">Choose Video</string>
+    <string name="add_sticker">Add Sticker</string>
+    <string name="share_location">Share Location</string>
+    <string name="share_contact">Share Contact</string>
+    <string name="cancel">Cancel</string>
+    <string name="crash_text">App crashed...</string>
+    <string name="intent_filter_kill_activity">kill_activity</string>
+
+    <!-- Facebook Ads -->
+    <string name="load_native_ad">Load Next Offer</string>
+    <string name="load_native_ads_list">Load Native Ads in ListView</string>
+    <string name="icon_desc">Ad icon</string>
+    <string name="image_desc">Ad image</string>
+    <string name="nointernetconnction">Internet cnnection Error</string>
+
+    <!-- Contacts Screen -->
+    <string name="txt_ciao_contact">\tPopTalk\t\t\t</string>
+    <string name="txt_ciao_out_contact">\tPopTalk out\t</string>
+
+    <!-- Create new group -->
+    <string name="txt_new_group">Name your group and select an optional group icon.</string>
+    <string name="txt_hint">Type group subject here..</string>
+    <string name="txt_get_a_phone_number">Get a phone number</string>
+    <string name="txt_provide_phone_number">We provide phone numbers from the following countries:</string>
+    <string name="hint_choose_number">Please choose a phone Number</string>
+    <string name="hint_your_selected_phone_number">Your PopTalk phone number</string>
+    <string name="exit_group">Exit Group</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_purchase_credits">Purchase 1000 credits for $4.99</string>
+    <string name="btn_get_this_number">Get this phone number now</string>
+    <string name="hint_amount_needed">For only 1000 credits</string>
+    <string name="hint_suggestion_for_purchase">You will get this number for free if you purchase 1000 calling credits</string>
+    <string name="action_add_people">Settings</string>
+    <string name="title_activity_country_list">Our Services in following countries</string>
+    <string name="title_activity_buy_number_country_wise">BuyNumberCountryWise</string>
+    <string name="title_activity_purchase_phone_number">PurchasePhoneNumberActivity</string>
+
+    <!-- Group Detail Info Screen -->
+
+    <string name="txt_group_info">Group Info</string>
+    <string name="txt_group_admin">Group Admin</string>
+    <string name="txt_group_name">Android Rocks</string>
+    <string name="txt_group_member_name">Rajat Singh</string>
+    <string name="txt_group_member_status">No One is Perfect</string>
+    <string name="txt_group_creation_time">created at %s</string>
+    <string name="txt_group_admin_name">created by %s</string>
+    <string name="txt_group_exit">Exit Group</string>
+    <string name="txt_media">Media</string>
+    <string name="txt_media_count">10</string>
+    <string name="txt_participants">Participants</string>
+
+    <!-- InterstialContactList Screen -->
+
+    <string name="txt_popTalk">PopTalk</string>
+    <string name="txt_poptalk_contacts">Contacts</string>
+    <string name="txt_popTalk_tab">(Always free)</string>
+    <string name="txt_poptalk_contacts_tab">(Requires credit)</string>
+    <string name="splash_slogan">Free calls and messages to any phone in the world</string>
+    <string name="title_activity_checkin">CheckinActivity</string>
+    <string name="check_in_text">Check In</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>

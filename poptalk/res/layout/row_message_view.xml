@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/padding_call_log_row" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.ciao.app.views.customviews.circularimageview.CircularImageView
+                android:id="@+id/data_item_image"
+                android:layout_width="@dimen/dimen_message_log_image"
+                android:layout_height="@dimen/dimen_message_log_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:src="@drawable/user_avtar"
+                app:civ_border="true"
+                app:civ_border_color="@android:color/darker_gray"
+                app:civ_border_width="2dp" >
+            </com.ciao.app.views.customviews.circularimageview.CircularImageView>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/data_item_image"
+                android:layout_alignEnd="@+id/data_item_image"
+                android:layout_alignRight="@+id/data_item_image"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_messeage_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:paddingLeft="@dimen/padding_call_log_row"
+        android:paddingTop="@dimen/padding_call_log_row"
+        android:singleLine="true"
+        android:text="Andrew Jones"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/padding_call_log_row"
+        android:paddingTop="@dimen/padding_call_log_row"
+        android:text="8:45 pm"
+        android:textColor="@android:color/darker_gray" />
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_messeage_contact_name"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:paddingLeft="@dimen/padding_call_log_row"
+        android:paddingTop="@dimen/padding_call_log_row"
+        android:singleLine="true"
+        android:text="Hey man,how are you?Let&apos;s hang out next weekend."
+        android:textColor="@android:color/darker_gray" />
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_unread_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_message_body"
+        android:background="@drawable/selecetor_unread_message"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header" >
+
+        <RelativeLayout
+            android:id="@+id/ll_app_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_app_header"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_app_header"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_back_from_change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:onClick="goToPreviousScreen"
+                android:padding="@dimen/padding_app_header"
+                android:src="@drawable/back" />
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_back_from_change_password"
+                android:layout_toRightOf="@+id/iv_back_from_change_password"
+                android:text="@string/txt_contacts_header"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ts_screen_header_title" />
+
+            <ImageView
+                android:id="@+id/iv_search_contact_in_contact_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:onClick="searchContact"
+                android:src="@drawable/search" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:visibility="gone" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/et_search_contacts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_chat_input_box"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/color_txt_gray" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/bnt_clear_search_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:onClick="clearSearch"
+                    android:src="@drawable/delete_icon" />
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_page"
+        android:paddingRight="@dimen/padding_page" >
+
+        <LinearLayout
+            android:id="@+id/ll_fav_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_favorites"
+                android:textColor="@color/color_txt"
+                android:textSize="@dimen/ts_btn_txt" />
+
+            <HorizontalScrollView
+                android:id="@+id/hv_favorite_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/ll_favorite_contacts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_all_contact"
+            android:textColor="@color/color_txt"
+            android:textSize="@dimen/ts_btn_txt" />
+
+        <GridView
+            android:id="@+id/gv_contacts"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="75dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+</LinearLayout>

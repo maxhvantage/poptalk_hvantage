@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+   <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="goToPreviousScreen"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_back_from_change_password"
+            android:layout_toRightOf="@+id/iv_back_from_change_password"
+            android:text="@string/txt_group_info"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_grp_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_group_info_rlv_height"
+        android:layout_below="@+id/ll_app_header"
+        android:layout_marginBottom="@dimen/d_group_info_rlv_margin_bottom"
+        android:background="@drawable/shape_ractangle" >
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_grp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_grp_img"
+            android:text="@string/txt_group_name"
+            android:textColor="@color/color_txt"
+            android:textSize="@dimen/ts_group_name" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_grp_created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_grp_name"
+            android:layout_toRightOf="@+id/iv_grp_img"
+            android:layout_alignRight="@+id/view1"
+            android:padding="@dimen/d_group_creation_time_padding"
+            android:text="@string/txt_group_creation_time"
+            android:textSize="@dimen/ts_group_creation_time" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_grp_created_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_grp_created_at"
+            android:layout_toRightOf="@+id/iv_grp_img"
+            android:text="@string/txt_group_admin_name"
+            android:textSize="@dimen/ts_group_creation_time" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/d_view_width"
+            android:layout_height="@dimen/d_view_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/d_view_margin_top"
+            android:layout_toLeftOf="@+id/edit_grp_info"
+            android:background="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/iv_grp_img"
+            android:layout_width="@dimen/grp_icon_img"
+            android:layout_height="@dimen/grp_icon_img"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/d_group_icon_margin"
+            android:background="@drawable/user_avtar" />
+
+        <ImageView
+            android:id="@+id/edit_grp_info"
+            android:layout_width="@dimen/grp_edit_img"
+            android:layout_height="@dimen/grp_edit_img"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edit_grp_info" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_grp_info"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+
+                android:id="@+id/rl_grp_media"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d_rl_group_media_margin"
+                android:background="@drawable/shape_ractangle">
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/tv_media"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/txt_media"
+                    android:focusable="true"
+                    android:textColor="@color/color_txt_gray"
+                    android:textSize="@dimen/ts_group_media"
+                    />
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/tv_media_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/txt_media_count"
+                    android:textColor="@color/color_txt_gray"
+                    android:textSize="@dimen/ts_group_media" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_group_media_view_height"
+                    android:layout_below="@+id/tv_media"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/d_group_media_view_margin_left"
+                    android:layout_marginRight="@dimen/d_group_media_view_margin_right"
+                    android:background="@android:color/darker_gray" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_horizontal_scroll_view_margin_top"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/ll_media"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/d_ll_media_padding">
+                        
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_grp_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_grp_media"
+                android:layout_marginLeft="@dimen/d_rl_group_member_margin_left"
+                android:layout_marginRight="@dimen/d_rl_group_member_margin_right"
+                android:layout_marginTop="@dimen/d_rl_group_member_margin_top"
+                android:background="@drawable/shape_ractangle">
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/tv_participants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/d_paricipants_margin_left"
+                    android:text="@string/txt_participants"
+                    android:textSize="@dimen/ts_participants" 
+                    android:textColor="@color/color_txt_gray"/>
+               
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/tv_participants_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/d_participants_count_margin_right"
+                    android:textSize="@dimen/ts_participants"
+                    android:textColor="@color/color_txt_gray" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_member_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_grp_members"
+                android:orientation="vertical"
+                android:background="@color/white"
+                 android:layout_marginLeft="@dimen/d_ll_member_list_margin_left"
+                android:layout_marginRight="@dimen/d_ll_member_list_margin_right">
+
+             
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_grp_exit_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_member_list"
+                android:layout_marginLeft="@dimen/d_rl_exit_group_margin_left"
+                android:layout_marginRight="@dimen/d_rl_exit_group_margin_right"
+                android:layout_marginTop="@dimen/d_rl_exit_group_margin_top"
+                android:clickable="true">
+                <Button
+                    android:id="@+id/bt_exit_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/morebright_red"
+                    android:text="@string/txt_group_exit"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

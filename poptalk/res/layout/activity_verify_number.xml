@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back_from_change_password"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/back"
+            android:padding="@dimen/padding_app_header"
+            android:onClick="goToPreviousScreen"/>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_verifiy_number"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_back_from_change_password"
+            android:layout_toEndOf="@+id/iv_back_from_change_password"
+            android:textSize="@dimen/ts_screen_header_title"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:padding="@dimen/padding_page"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <com.ciao.app.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_confirmation_label"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_txt_gray"
+                android:paddingTop="@dimen/padding_change_password_top"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/resend"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_verification_code"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_txt_gray"
+                android:layout_marginTop="@dimen/padding_enter_chat_txt"
+                android:inputType="number"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textColor="@android:color/white"
+                android:background="@drawable/selector_button"
+                android:id="@+id/button5"
+                android:onClick="verify"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_enter_chat_txt"/>
+
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/tv_resend_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/txt_resend"
+                android:visibility="gone"
+                android:linksClickable="true"
+                android:paddingTop="15dp"/>
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/tv_countdown_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_txt_gray"
+                android:textSize="@dimen/ts_btn_txt"
+                android:paddingTop="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

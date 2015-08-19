@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_call_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:background="@color/color_call_top_bar_gb"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_keypad"
+            style="@style/CallOptions"
+            android:orientation="vertical">
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:drawableTop="@drawable/dialpad"
+                android:paddingTop="@dimen/padding_top_menu_button"
+                android:text="@string/txt_keypad"
+                android:textSize="@dimen/ts_menu"
+                android:id="@+id/tv_keypad"/>
+            <View
+                android:id="@+id/v_keypad"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_selected_tab"
+                android:layout_marginBottom="@dimen/width_splash_login_sign_up_vertical_line"
+                android:layout_marginTop="@dimen/width_splash_login_sign_up_vertical_line"
+                android:background="@color/color_call_screen_selected_option"></View>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/width_splash_login_sign_up_vertical_line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:layout_marginTop="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:background="@color/color_vertical_line_dark_top_menu"></View>
+        <View
+            android:layout_width="@dimen/width_splash_login_sign_up_vertical_line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:layout_marginTop="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:background="@color/color_vertical_line_light_top_menu"></View>
+
+
+        <LinearLayout
+            android:id="@+id/ll_call_log"
+            style="@style/CallOptions"
+            android:orientation="vertical">
+            <com.ciao.app.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:drawableTop="@drawable/calllog"
+                android:paddingTop="@dimen/padding_top_menu_button"
+                android:text="@string/txt_call_log"
+                android:textSize="@dimen/ts_menu"
+                android:id="@+id/tv_call_log"/>
+            <View
+                android:id="@+id/v_call_log"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_selected_tab"
+                android:layout_marginBottom="@dimen/width_splash_login_sign_up_vertical_line"
+                android:layout_marginTop="@dimen/width_splash_login_sign_up_vertical_line"
+                android:background="@color/color_call_screen_selected_option"></View>
+        </LinearLayout>
+
+       <!--  <View
+            android:layout_width="@dimen/width_splash_login_sign_up_vertical_line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:layout_marginTop="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:background="@color/color_vertical_line_dark_top_menu"></View>
+        <View
+            android:layout_width="@dimen/width_splash_login_sign_up_vertical_line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:layout_marginTop="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:background="@color/color_vertical_line_light_top_menu"></View>
+        <LinearLayout
+            android:id="@+id/ll_contact_list"
+            style="@style/CallOptions"
+            android:orientation="vertical">
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:drawableTop="@drawable/contact_list"
+            android:paddingTop="@dimen/padding_top_menu_button"
+            android:text="@string/txt_contacts"
+            android:textSize="@dimen/ts_menu"
+            android:id="@+id/tv_contacts_list"/>
+            <View
+                android:id="@+id/v_contact_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_selected_tab"
+                android:layout_marginBottom="@dimen/width_splash_login_sign_up_vertical_line"
+                android:layout_marginTop="@dimen/width_splash_login_sign_up_vertical_line"
+                android:background="@color/color_call_screen_selected_option"></View>
+            </LinearLayout> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_call_screen_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

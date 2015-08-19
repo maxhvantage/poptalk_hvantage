@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_tactangle"
+        android:paddingTop="@dimen/padding_page"
+        android:paddingBottom="@dimen/padding_page" >
+
+        <ImageView
+            android:id="@+id/iv_country_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:clickable="false"
+            android:src="@drawable/flag_brazil"
+           >
+        </ImageView>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="Hello"
+            android:textSize="22sp"
+            android:textColor="@color/color_txt_gray"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/iv_rightarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow" />
+
+    </RelativeLayout>
+</LinearLayout>

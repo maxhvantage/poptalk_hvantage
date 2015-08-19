@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:minWidth="240dp">
+
+    <EditText
+        android:id="@+id/tweet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Share Your Experience with Poptalk App"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/margin_bottom" />
+
+    <Button
+        android:id="@+id/post_tweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10px"
+        android:text="Tweet"
+        android:background="@drawable/selector_twitter_button" 
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

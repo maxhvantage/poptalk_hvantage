@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="goToPreviousScreen"
+            android:padding="@dimen/padding_app_header"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_buy_ciao_number"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_page" >
+
+            <ImageView
+                android:id="@+id/iv_poptalk_sms_page"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="false"
+                android:padding="@dimen/padding_app_header"
+                android:src="@drawable/poptalk_sms_page" />
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="@dimen/padding_page"
+                android:paddingTop="@dimen/padding_page"
+                android:text="@string/txt_congrats_you_are_in"
+                android:textColor="@color/color_txt"
+                android:textSize="@dimen/ts_screen_header_title"
+                android:textStyle="bold" />
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/padding_page"
+                android:paddingTop="@dimen/padding_page"
+                android:text="@string/txt_state_for_free_number"
+                android:textSize="@dimen/ts_poptalk_number_desc" />
+
+            <!--
+                 <Spinner
+                android:id="@+id/sp_country_for_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_page"
+                android:paddingBottom="@dimen/padding_page" />
+            -->
+
+
+            <!--
+                 <Spinner
+                android:id="@+id/sp_available_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_page"
+                android:paddingBottom="@dimen/padding_page"
+                android:paddingTop="@dimen/padding_page" />
+            -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/tv_us_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="US +1 "
+                    android:clickable="false" />
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/tv_us_code"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:onClick="gotoSelectNumberScreen"
+                    android:padding="10dp"
+                    android:background="@drawable/selector_chat_input_box"
+                    android:text="Check availability here"
+                    android:linksClickable="false"
+                    android:singleLine="false" />
+
+            </RelativeLayout>
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/tv_tnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_select_setings"
+                android:layout_gravity="center_vertical"
+                />
+
+            <Button
+                android:id="@+id/btn_buy_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/padding_page"
+                android:layout_marginTop="@dimen/padding_page"
+                android:background="@drawable/selector_button"
+                android:text="@string/txt_secure_your_ciao_number"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ts_btn_txt" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

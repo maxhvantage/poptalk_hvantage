@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_back_from_create_group"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/back"
+            android:padding="@dimen/padding_app_header"
+            android:onClick="goToPreviousScreen" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_create_new_group"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_back_from_create_group"
+            android:layout_toEndOf="@+id/iv_back_from_create_group"
+            android:textSize="@dimen/ts_screen_header_title"/>
+        <View
+            android:layout_width="@dimen/width_splash_login_sign_up_vertical_line"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_toLeftOf="@+id/tv_next"
+            android:layout_marginBottom="@dimen/padding_page"
+            android:layout_marginTop="@dimen/padding_page"/>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_create"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:drawableLeft="@drawable/crop__ic_done"
+            android:textSize="@dimen/ts_screen_header_title"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:padding="@dimen/padding_page"/>
+    </RelativeLayout>
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_add_group_praticipants"
+        android:padding="@dimen/padding_page" 
+        android:textColor="@color/color_txt_gray"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_search_contact"
+        android:padding="@dimen/padding_page">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout2">
+
+            <com.ciao.app.views.customviews.ContactsEditText
+                android:id="@android:id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:imeOptions="actionDone"
+                android:background="@drawable/selector_chat_input_box"
+                android:textColor="@color/color_txt_gray">
+                <requestFocus />
+            </com.ciao.app.views.customviews.ContactsEditText>
+
+            <ImageView
+                android:id="@+id/bnt_clear_search_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@android:drawable/ic_input_add"
+                android:onClick="goToSelectMultipleContactsAtOnce"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_group_user"/>
+</LinearLayout>

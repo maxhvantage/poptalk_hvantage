@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_call_log_row"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayout">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <com.ciao.app.views.customviews.circularimageview.CircularImageView
+                android:id="@+id/data_item_image"
+                android:layout_width="@dimen/dimen_message_log_image"
+                android:layout_height="@dimen/dimen_message_log_image"
+                android:clickable="true"
+                android:src="@drawable/user_avtar"
+                app:civ_border="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@android:color/darker_gray"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </com.ciao.app.views.customviews.circularimageview.CircularImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/ic_launcher"
+                android:layout_alignBottom="@+id/data_item_image"
+                android:layout_alignRight="@+id/data_item_image"
+                android:layout_alignEnd="@+id/data_item_image"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andrew Jones"
+        android:id="@+id/tv_messeage_contact_name"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:paddingTop="@dimen/padding_call_log_row"
+        android:paddingLeft="@dimen/padding_call_log_row"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8:45 pm"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/tv_message_time"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="@dimen/padding_call_log_row"
+        android:paddingLeft="@dimen/padding_call_log_row"/>
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey man,how are you?Let&apos;s hang out next weekend."
+        android:id="@+id/tv_message_body"
+        android:layout_below="@+id/tv_messeage_contact_name"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:paddingTop="@dimen/padding_call_log_row"
+        android:paddingLeft="@dimen/padding_call_log_row"
+        android:textColor="@android:color/darker_gray"
+        android:singleLine="true"/>
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_unread_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_message_body"
+        android:background="@drawable/selecetor_unread_message"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

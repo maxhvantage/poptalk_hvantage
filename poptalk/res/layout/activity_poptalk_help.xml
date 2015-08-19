@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_country_list"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="goToPreviousScreen"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="Help"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="30dp" >
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="For any queries or suggestion related to PopTalk"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please email us at "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="20dp"
+                 />
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="info@poptalk.us"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="10dp"
+                android:autoLink="email" />
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or you can call us at "
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:paddingTop="10dp"/>
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="+1(206)488-1009 "
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:paddingTop="10dp"
+                android:autoLink="phone"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

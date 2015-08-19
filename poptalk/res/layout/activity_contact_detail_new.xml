@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_header_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="backFromProfileAcitivity"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_back_from_chat"
+            android:singleLine="true"
+            android:text="User Name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_invite_to_poptalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_invite"
+            android:text="Invite"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/credit_bg" >
+            </RelativeLayout>
+
+            <com.ciao.app.views.customviews.circularimageview.CircularImageView
+                android:id="@+id/iv_user_profile_pic"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@null"
+                android:src="@drawable/user_avtar"
+                app:civ_border="true"
+                app:civ_border_color="@android:color/darker_gray"
+                app:civ_border_width="5dp" />
+        </FrameLayout>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_label_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameLayout1"
+            android:layout_centerHorizontal="true"
+            android:text="Contacts"
+            android:textColor="@color/color_txt_gray"
+            android:textSize="30dp" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tv_label_contacts"
+            android:id="@+id/tb_phone"
+            android:baselineAligned="false"
+            android:layout_marginTop="15dp">
+
+        </TableLayout>
+
+        <!--<Spinner-->
+            <!--android:id="@+id/spn_contacts_number"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/tv_label_contacts"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:entries="@array/state_array"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:spinnerMode="dropdown" />-->
+    </RelativeLayout>
+
+</LinearLayout>

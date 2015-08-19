@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_header_contact_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_app_header"
+    android:orientation="vertical"
+    android:background="@color/color_app_header">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_header_contact_normal_header">
+            <ImageView
+                android:id="@+id/iv_search_contact_in_contact_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/search"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_add_user"
+                android:src="@drawable/sync"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/iv_search_contact_in_contact_fragment"
+                android:layout_toStartOf="@+id/iv_search_contact_in_contact_fragment"
+                android:padding="@dimen/padding_page"
+                android:onClick="syncContacts"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_search_contact"
+            android:visibility="gone"
+            android:layout_margin="5dp">
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/et_search_contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/selector_chat_input_box">
+                    <requestFocus/>
+                    </EditText>
+
+                <ImageView
+                    android:id="@+id/bnt_clear_search_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/delete_icon"/>
+
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_header_contact_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/h_app_header"
+    android:background="@color/color_app_header"
+    android:orientation="vertical" >
+
+    <!--
+         <com.ciao.app.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_popTalk"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_screen_header_title"/>
+    -->
+
+    <ImageView
+        android:id="@+id/tv_message_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/poptalk" />
+
+    <ImageView
+        android:id="@+id/iv_sync_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:onClick="syncContacts"
+        android:padding="@dimen/padding_page"
+        android:src="@drawable/sync" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_contact_switcher_bg"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_ciao_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_contact_switcher_rounded_left"
+            android:padding="5dp" >
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/tv_ciao_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_ciao_contact"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ciao_out_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_contact_switcher_rounded_right" >
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/tv_ciao_out_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/txt_ciao_out_contact"
+                android:textColor="@color/color_txt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ciao.app.views.customviews.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="10dp" >
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/country_code"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:text="212"
+        android:textSize="18sp"
+        android:textColor="@color/color_txt_gray" />
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/checkstate"
+        android:layout_toRightOf="@+id/country_code"
+        android:focusable="false"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textColor="@color/color_txt_gray" />
+
+    <com.ciao.app.views.customviews.InertCheckBox
+        android:id="@+id/singleitemCheckBox"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:button="@drawable/single_radio_chice"
+        android:focusable="false" />
+
+</com.ciao.app.views.customviews.CheckableRelativeLayout>

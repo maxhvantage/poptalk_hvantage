@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:angle="270"
+                android:endColor="@color/color_vertical_line_dark_bottom_menu"
+                android:startColor="@color/color_vertical_line_dark_bottom_menu"/>
+            <stroke android:width="1dp"
+                android:color="@android:color/secondary_text_light" />
+            <corners android:radius="1dp" />
+            <padding
+                android:bottom="@dimen/p_btn_bottom"
+                android:left="@dimen/p_btn_left"
+                android:right="@dimen/p_btn_right"
+                android:top="@dimen/p_btn_top" />
+        </shape>
+    </item>
+</selector>

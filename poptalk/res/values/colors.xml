@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_txt">#389df9</color>
+    <!--<color name="color_app_header">#0084ff</color> --><!-- 0084ff -->
+
+    <color name="color_app_header">#389df9</color>
+    <color name="color_app_signup">#66cc33</color>
+    <color name="color_call_screen_selected_option">#389df9</color>
+    <!-- <color name="color_call_top_bar_gb">#505050</color> -->
+    <color name="color_call_top_bar_gb">#424242</color>
+    <color name="color_btn_normal">#006cd1</color>
+    <color name="color_btn_selected">#389df9</color>
+    <color name="color_call_screen_menu_txt">#313131</color>
+    <color name="color_call_screen_menu_bg">#f1f1f1</color>
+    <color name="color_vertical_line_dark_top_menu">#191919</color>
+    <color name="color_vertical_line_light_top_menu">#6d6d6d</color>
+    <color name="color_vertical_line_dark_bottom_menu">#d0d0d0</color>
+    <color name="color_vertical_line_light_bottom_menu">#ffffff</color>
+    <color name="color_fb_button">#1b3c82</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="header_divider">#9d9b9b</color>
+    <color name="share_dialog">#157DFB</color>
+    <color name="color_txt_gray">#545454</color>
+
+    <!-- LOCK SCREEN APP -->
+
+    <color name="deal_preview_color">#2A435E</color>
+    <color name="heder_bar_color">#4E4D93</color>
+    <!-- <color name="transparent">#00000000</color> -->
+    <color name="gray_text">#858585</color>
+    <color name="font_blue_color">#5276ba</color>
+    <color name="sign_text_color">#494949</color>
+    <color name="offwihit_bg">#D9D9D9</color>
+    <color name="blue">#0d506d</color>
+    <color name="blue_base">#31a2d2</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="left_btn_color">#2d2d2f</color>
+    <color name="shadow_color">#52492f</color>
+    <color name="text_fan_btn_text_gray">#666666</color>
+    <color name="bg_fan_light_gray">#222222</color>
+    <color name="bright_red">#7a0011</color>
+    <color name="morebright_red">#389df9</color>
+    <color name="list1">#000000</color>
+    <color name="list2">#2d2d2f</color>
+    <!-- <color name="contact_list_name">#455055</color> -->
+    <color name="contact_list_name">#ffffff</color>
+    <color name="contact_list_divider">#cfcfcf</color>
+
+    <!-- TAG Screen -->
+    <color name="bg_tag_screen">#222222</color>
+    <color name="bg_tag_tabs">#666666</color>
+    <color name="textcolor_tag_tittle">#626262</color>
+    <color name="textcolor_tag_text_unselected">#989797</color>
+    <color name="textcolor_tag_text_selected">#3a3a3a</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+   <!--  Index bar -->
+    
+     <color name="indexer_bar_bg_color">#40000000</color>
+    <color name="indexer_bar_selected_color">#3399ff</color>
+    <color name="letter_bg_color">#1C86EE</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

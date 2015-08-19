@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_call_log_row"
+    android:padding="@dimen/padding_page"
+    android:background="@android:color/white">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:id="@+id/btn_buy"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="@dimen/padding_page"
+        android:background="@drawable/selector_buy_buttons"
+        android:textColor="@android:color/white"/>
+    <com.ciao.app.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New"
+        android:textSize="@dimen/ts_screen_header_title"
+        android:id="@+id/tv_Item_name"
+        android:layout_alignTop="@+id/btn_buy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_buy"
+        android:singleLine="false"
+        android:textColor="@color/color_txt_gray"/>
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="125"
+        android:id="@+id/tv_item_price"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/padding_page"
+        android:layout_below="@+id/tv_Item_name"
+        android:layout_alignLeft="@+id/tv_Item_name"
+        android:layout_alignStart="@+id/tv_Item_name"
+       android:textColor="@color/color_txt_gray"/>
+</RelativeLayout>

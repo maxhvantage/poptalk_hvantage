@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h_app_header"
+            android:background="@color/color_call_top_bar_gb"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_message"
+            style="@style/CallOptions"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_top_menu_button" >
+
+
+            <ImageView
+                android:id="@+id/iv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ciao_selected" />
+
+            <View
+                android:id="@+id/v_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_selected_tab"
+                android:layout_marginBottom="@dimen/width_splash_login_sign_up_vertical_line"
+                android:layout_marginTop="@dimen/width_splash_login_sign_up_vertical_line"
+                android:background="@color/color_call_screen_selected_option" >
+            </View>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/width_splash_login_sign_up_vertical_line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:layout_marginTop="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:background="@color/color_vertical_line_dark_top_menu" >
+        </View>
+
+        <View
+            android:layout_width="@dimen/width_splash_login_sign_up_vertical_line"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:layout_marginTop="@dimen/margin_splash_login_sign_up_vertical_line"
+            android:background="@color/color_vertical_line_light_top_menu" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/ll_sms"
+            style="@style/CallOptions"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_top_menu_button" >
+
+            <ImageView
+                android:id="@+id/iv_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sms_normal" />
+
+            <View
+                android:id="@+id/v_sms"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_selected_tab"
+                android:layout_marginBottom="@dimen/width_splash_login_sign_up_vertical_line"
+                android:layout_marginTop="@dimen/width_splash_login_sign_up_vertical_line"
+                android:visibility="gone" >
+            </View>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_splash_login_sign_up_vertical_line"
+        android:background="@color/color_vertical_line_dark_bottom_menu" /> -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/chat_list_bg" />
+
+        <LinearLayout
+            android:id="@+id/ll_message_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

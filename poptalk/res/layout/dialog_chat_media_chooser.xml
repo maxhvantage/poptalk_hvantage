@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/transparent_color" >
+
+    <LinearLayout
+        android:id="@+id/ll_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_cancel"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border_dialog"
+        android:orientation="vertical" >
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:minHeight="30dp"
+            android:textSize="18sp"
+            android:text="@string/take_photo"
+            android:textColor="@color/share_dialog"
+             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/header_divider"/>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_choose_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:minHeight="30dp"
+            android:textSize="18sp"
+            android:text="@string/choose_photo"
+            android:textColor="@color/share_dialog" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/header_divider"/>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_choose_video"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:minHeight="30dp"
+            android:textSize="18sp"
+            android:text="@string/choose_video"
+            android:textColor="@color/share_dialog"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/header_divider"
+            android:visibility="gone"/>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_sticker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:minHeight="30dp"
+            android:textSize="18sp"
+            android:text="@string/add_sticker"
+            android:textColor="@color/share_dialog"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/header_divider"
+            android:visibility="gone"/>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:minHeight="30dp"
+            android:textSize="18sp"
+            android:text="@string/share_location"
+            android:textColor="@color/share_dialog"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/header_divider"
+            android:visibility="gone"/>
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_contact"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="35dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:text="@string/share_contact"
+            android:textColor="@color/share_dialog"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border_red"
+        android:gravity="center"
+        android:minHeight="45dp"
+        android:textSize="18sp"
+        android:text="@string/cancel"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

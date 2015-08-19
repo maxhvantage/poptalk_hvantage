@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:angle="270"
+                android:endColor="#FFADA5"
+                android:startColor="#FFADA5"/>
+            <stroke android:width="1dp"
+                android:color="#FFADA5" />
+            <corners android:radius="1dp" />
+            <padding
+                android:bottom="@dimen/p_btn_bottom"
+                android:left="@dimen/p_btn_left"
+                android:right="@dimen/p_btn_right"
+                android:top="@dimen/p_btn_top" />
+
+        </shape>
+    </item>
+</selector>

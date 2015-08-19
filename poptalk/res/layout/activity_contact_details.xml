@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_header_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="backFromProfileAcitivity"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_message_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_back_from_chat"
+            android:singleLine="true"
+            android:text="@string/txt_poptalk_contacts"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:padding="20dp" >
+
+                <com.ciao.app.views.customviews.circularimageview.CircularImageView
+                    android:id="@+id/iv_user_profile_pic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@null"
+                    android:src="@drawable/user_avtar" />
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/tv_user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_user_profile_pic"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/iv_user_profile_pic"
+                    android:singleLine="true"
+                    android:text="Andrew Jones"
+                    android:textColor="@color/color_txt_gray"
+                    android:textSize="15dp"
+                    app:fontName="bold" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/row_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_splash_login_sign_up_vertical_line"
+                android:background="@color/color_vertical_line_light_top_menu" >
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_invite"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/h_app_header"
+                android:padding="@dimen/padding_page"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/new_invite" />
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txt_invite_to_ciao"
+                    android:textColor="@color/color_txt_gray"
+                    android:textSize="15dp"
+                    app:fontName="bold" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/row_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_splash_login_sign_up_vertical_line"
+                android:background="@color/color_vertical_line_light_top_menu"
+                android:visibility="visible" >
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_add_fav"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/h_app_header"
+                android:padding="@dimen/padding_page"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_launcher" />
+
+                <com.ciao.app.views.customviews.CustomTextView
+                    android:id="@+id/tv_add_vav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/txt_add_fav"
+                    android:textColor="@color/color_txt_gray"
+                    android:textSize="15dp"
+                    app:fontName="bold" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/row_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_splash_login_sign_up_vertical_line"
+                android:background="@color/color_vertical_line_light_top_menu"
+                android:visibility="visible" >
+            </View>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_phones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <View
+                android:id="@+id/row_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_splash_login_sign_up_vertical_line"
+                android:background="@color/color_vertical_line_light_top_menu"
+                android:visibility="gone" >
+            </View>
+
+            <LinearLayout
+                android:id="@+id/ll_emails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

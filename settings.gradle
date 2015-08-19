@@ -1,0 +1,9 @@
+include ':poptalk'
+include ':OldCSipSimple'
+project(':OldCSipSimple').projectDir=new File(settingsDir,'../poptalk-libraries/OldCSipSimple/OldCSipSimple')
+include ':slidingmenulibrary'
+project(':slidingmenulibrary').projectDir=new File(settingsDir,'../poptalk-libraries/slidingmenu-library/slidingmenulibrary')
+include ':actionbarsherlock'
+project(':actionbarsherlock').projectDir=new File(settingsDir,'../poptalk-libraries/actionbarsherlock/actionbarsherlock')
+include ':mopub-sdk'
+project(':mopub-sdk').projectDir=new File(settingsDir,'../poptalk-libraries/mopub-sdk')

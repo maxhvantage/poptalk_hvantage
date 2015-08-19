@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="goToPreviousScreen"
+            android:padding="@dimen/padding_app_header"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_back_from_change_password"
+            android:layout_toRightOf="@+id/iv_back_from_change_password"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/et_search_number"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_chat_input_box"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textColor="@android:color/black" 
+            android:inputType="number"
+            android:hint="Enter the first three digits to check..">
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/bnt_clear_search_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/delete_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:scrollbars="none" />
+
+</LinearLayout>

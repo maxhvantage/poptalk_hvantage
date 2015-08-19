@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" >
+
+            <com.ciao.app.views.customviews.circularimageview.CircularImageView
+                android:id="@+id/civ_person_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:src="@drawable/user_avtar"
+                app:civ_border="true"
+                app:civ_border_color="@android:color/darker_gray"
+                app:civ_border_width="2dp" >
+            </com.ciao.app.views.customviews.circularimageview.CircularImageView>
+
+            <ImageView
+                android:id="@+id/iv_ciao_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/civ_person_image"
+                android:layout_alignEnd="@+id/civ_person_image"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/civ_person_image"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <!--
+            <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/iv_ciao_user"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="bottom|right"
+            android:visibility="visible"/>
+        -->
+    </FrameLayout>
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="Contact"
+        android:textColor="@color/color_txt_gray" />
+
+</LinearLayout>

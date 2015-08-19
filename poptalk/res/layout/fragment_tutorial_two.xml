@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/tut_cloud_bg" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/credit_blur" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_tutorial_screen"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/tut_small_cloud" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/credit_sharp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <com.ciao.app.views.customviews.CustomTextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="Use"
+                            android:textColor="@color/color_txt_gray"
+                            android:textSize="40dp" />
+
+                        <com.ciao.app.views.customviews.CustomTextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/textView1"
+                            android:layout_below="@+id/textView1"
+                            android:text="Credits"
+                            android:textColor="@color/color_txt_gray"
+                            android:textSize="20dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:background="@drawable/shape_tutorial_screen" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+
+                    <View
+                        android:id="@+id/imageView1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_circle_tut" />
+
+                    <com.ciao.app.views.customviews.CustomTextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Step 2: Use Your Credits"
+                        android:textColor="@color/color_txt_gray"
+                        app:fontName="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+
+                    <View
+                        android:id="@+id/imageView1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_circle_red_small" />
+
+                    <com.ciao.app.views.customviews.CustomTextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="You can use your credits to call or text any kind of phone in the world for free, regardless of if that person has a smartphone or not.  To make a call, simply open the PopTalk app and dial a number, or look up an existing contact on the Contacts page.  You can also view your contacts by pressing the contacts icon on upper-right corner of the Calls page."
+                        android:textColor="@color/color_txt_gray"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+
+                    <View
+                        android:id="@+id/imageView1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_circle_red_small" />
+
+                    <com.ciao.app.views.customviews.CustomTextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="When viewing your Contacts, notice the screen is divided into PopTalk users and your phone’s contacts who are not on PopTalk.  Calling and messaging other PopTalk users is always unlimited and free."
+                        android:textColor="@color/color_txt_gray"
+                        android:textSize="15dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+
+                    <View
+                        android:id="@+id/imageView1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/shape_circle_red_small" />
+
+                    <com.ciao.app.views.customviews.CustomTextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="To send a message to 1 other person, enter the Messages tab and click the + sign in the top right corner.  To send a group message, click the group message icon, also in the top right corner of the Messages screen.  Calling and messaging other PopTalk users is always unlimited and free."
+                        android:textColor="@color/color_txt_gray"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

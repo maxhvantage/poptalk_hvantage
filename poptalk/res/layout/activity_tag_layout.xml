@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_tag_screen">
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Offers\n Check in daily to earn a credit bonus!"
+        android:textColor="@color/textcolor_tag_tittle"
+        android:textSize="18sp" />
+
+    <com.ciao.app.views.customviews.CustomTextView
+        android:id="@+id/tv_total_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/right_menu_tab"
+        android:layout_margin="2dp"
+        android:layout_marginRight="14dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/credit_icon"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:text="200"
+        android:textColor="#ffff00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Header"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_facebookNative"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/bright_red"
+            android:gravity="center"
+            android:text="Install App"
+            android:textColor="@color/black" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_earnCreditsInterstitial"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Ads click"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/lin_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_Header"
+        android:background="@color/bg_tag_tabs"
+        android:fillViewport="false" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adlayout"
+        android:layout_below="@+id/lin_tabs" />
+
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/right_menu_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_total_credit"
+        android:layout_alignTop="@+id/tv_Header"
+        android:src="@drawable/credit_icon"
+        android:visibility="gone" />
+
+</RelativeLayout>

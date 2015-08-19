@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="goToPreviousScreen"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_back_from_change_password"
+            android:layout_toRightOf="@+id/iv_back_from_change_password"
+            android:text="@string/check_in_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_total_credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_page"
+            android:paddingRight="@dimen/padding_page"
+            android:paddingTop="@dimen/padding_page"
+            android:text="125"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+
+        <ImageView
+            android:id="@+id/iv_credit_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_total_credits"
+            android:layout_toStartOf="@+id/tv_total_credits"
+            android:onClick="animateCoin"
+            android:src="@drawable/credit_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_location" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_checkin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Check in 7 days in a row to earn 10 credits."
+            android:textColor="@color/textcolor_tag_tittle" />
+
+        <Button
+            android:id="@+id/btn_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_checkin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_bg_grey_blue_border"
+            android:padding="10dp"
+            android:text="@string/check_in_text"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

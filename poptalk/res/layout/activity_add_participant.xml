@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_app_header_nl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_back_from_numbers_list"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="goToPreviousScreen"
+            android:src="@drawable/back" />
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_back_from_country_list"
+            android:gravity="center_vertical"
+            android:text="Add participant"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+    </RelativeLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/include_search_view" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.ciao.app.views.customviews.CustomTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TextView" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" >
+
+                <ListView
+                    android:id="@+id/contacts_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@null"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <FrameLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="18dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="#EAEAEA" >
+
+                    <com.ciao.app.views.customviews.CustomTextView
+                        android:id="@+id/title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/indexer_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/section_toast_layout"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/current_letter_bubble"
+                    android:visibility="gone" >
+
+                    <com.ciao.app.views.customviews.CustomTextView
+                        android:id="@+id/section_toast_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#8E8E8E"
+                        android:textSize="30sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_contacts_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:cacheColorHint="@null"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:id="@+id/tv_static_checkback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text=" Please check back\nwe are syncing\nyour contacts"
+                        android:textSize="18sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_static_checkback"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#468ee5" >
+
+                        <ImageView
+                            android:id="@+id/iv_sync_contacts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_page"
+                            android:src="@drawable/sync" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

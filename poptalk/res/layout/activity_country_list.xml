@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_city"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_app_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_app_header"
+        android:layout_alignParentTop="true"
+        android:background="@color/color_app_header"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_back_from_country_list"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:onClick="goToPreviousScreen"
+            android:src="@drawable/back" />
+
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="Get a phone number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ts_screen_header_title" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tv_service_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ciao.app.views.customviews.CustomTextView
+            android:id="@+id/tv_service_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="We provide the phone numbers from the following countries :"
+            android:textColor="@color/color_app_header"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_lv_country_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lv_country_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/splash_city"
+            android:dividerHeight="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"></ListView>
+    </RelativeLayout>
+
+</LinearLayout>
